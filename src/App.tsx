@@ -1,7 +1,6 @@
 import { Download } from "lucide-react"
 import "./App.css"
-import Logo from "./assets/Logo.jpg"
-import StarletteBG from  "./assets/MainMenuGuide.png"
+
 
 interface Feature {
   title: string
@@ -24,7 +23,7 @@ function App() {
     },
   ]
   const handleDownload = () => {
-    const fileUrl = 'Starlette_exe/StarletteGame.zip'; 
+    const fileUrl = 'Starlette_exe/StarletteGame.zip';
     const fileName = 'Starlette_Data.zip';
 
     const link = document.createElement('a');
@@ -54,8 +53,8 @@ function App() {
       <header className="relative z-10 p-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 relative">
-            <img className="absolute inset-0 bg-purple-500 rounded-md pixel-corners" src={Logo} />
-            
+            <img className="absolute inset-0 bg-purple-500 rounded-md pixel-corners" src={`Logo.jpg`} />
+
           </div>
           <h1 className="text-xl font-bold tracking-wider pixel-text">Starlette</h1>
         </div>
@@ -91,7 +90,7 @@ function App() {
 
           <div className="relative w-full max-w-4xl aspect-video mx-auto rounded-lg overflow-hidden border-4 border-purple-900 pixel-corners">
             <img
-              src={StarletteBG}
+              src={"MainMenuGuide.png"}
               alt="Game Screenshot"
               className="object-cover w-full h-full"
             />
