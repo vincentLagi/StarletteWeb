@@ -1,4 +1,4 @@
-import { Download } from "lucide-react"
+import { Download, Github } from "lucide-react"
 import "./App.css"
 
 
@@ -160,7 +160,36 @@ function App() {
 
       <footer className="relative z-10 py-8 px-4 border-t border-gray-800">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-400">© {new Date().getFullYear()} Starlette. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <p className="text-gray-400">© {new Date().getFullYear()} Starlette. All rights reserved.</p>
+
+            {/* Social Media Icons */}
+            <div className="flex items-center gap-4">
+              <a
+                href="https://github.com/TazkieCT/starlette"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-purple-400 transition-colors flex items-center gap-2 group"
+              >
+                <Github className="w-5 h-5" />
+                <span className="text-sm group-hover:text-purple-400">GitHub</span>
+              </a>
+
+              <a
+                href="https://power-chicory-d5d.notion.site/2076e2847e058099af9fe0f190a4c785?v=2076e2847e05807cbaef000c7c8bbb8a"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-400 hover:text-purple-400 transition-colors flex items-center gap-2 group"
+              >
+                {/* Custom Notion Icon */}
+                <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933zm14.337.745c.093.42 0 .84-.42.888l-.7.14v10.264c-.608.327-1.168.514-1.635.514-.748 0-.935-.234-1.495-.933l-4.577-7.186v6.952L12.21 19s0 .84-1.168.84l-3.222.186c-.093-.186 0-.653.327-.746l.84-.233V9.854L7.822 9.76c-.094-.42.14-1.026.793-1.073l3.456-.233c.794-.047 1.007.233 1.548.933l4.904 7.747v-6.719l-1.026-.093c-.093-.514.28-.887.747-.933z" />
+                </svg>
+                <span className="text-sm group-hover:text-purple-400">Notion</span>
+              </a>
+            </div>
+          </div>
+
           <div className="flex gap-6">
             <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
               Privacy Policy
