@@ -23,7 +23,7 @@ function App() {
     },
   ]
   const handleDownload = () => {
-    const fileUrl = "/Starlette_exe/StarletteGame.zip" 
+    const fileUrl = "/Starlette_exe/Build.zip" 
     const fileName = "Starlette_Data.zip"
 
     const link = document.createElement("a")
