@@ -1,0 +1,28 @@
+.pixel-text {
+  font-family: "Courier New", monospace;
+  letter-spacing: 0.1em;
+  text-shadow: 2px 2px 0px rgba(128, 0, 255, 0.5);
+}
+
+.pixel-corners {
+  clip-path: polygon(
+    0px 4px,
+    4px 0px,
+    calc(100% - 4px) 0px,
+    100% 4px,
+    100% calc(100% - 4px),
+    calc(100% - 4px) 100%,
+    4px 100%,
+    0px calc(100% - 4px)
+  );
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
