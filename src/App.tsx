@@ -23,14 +23,16 @@ function App() {
     },
   ]
   const handleDownload = () => {
-    const fileUrl = 'Starlette_exe/StarletteGame.zip';
-    const fileName = 'Starlette_Data.zip';
+    const fileUrl = "/Starlette_exe/StarletteGame.zip" 
+    const fileName = "Starlette_Data.zip"
 
-    const link = document.createElement('a');
-    link.href = fileUrl;
-    link.download = fileName;
-    link.click();
-  };
+    const link = document.createElement("a")
+    link.href = fileUrl
+    link.download = fileName
+    document.body.appendChild(link)
+    link.click()
+    document.body.removeChild(link)
+  }
   return (
     <div className="min-h-screen bg-black text-white flex flex-col">
       <div className="fixed inset-0 z-0">
