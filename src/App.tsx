@@ -23,8 +23,8 @@ function App() {
     },
   ]
   const handleDownload = () => {
-    const fileUrl = "/Starlette_exe/Installer.exe" 
-    const fileName = "Installer.exe"
+    const fileUrl = "/Starlette_exe/starlette_installer.exe"
+    const fileName = "starlette_installer.exe"
 
     const link = document.createElement("a")
     link.href = fileUrl
